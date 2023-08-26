@@ -1,38 +1,161 @@
-.App {
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap");
+
+* {
+  font-family: "Space Grotesk", sans-serif;
+}
+
+.main-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-title h2 {
+  font-weight: 600;
+  font-size: 50px;
+  color: #781eb0;
+}
+
+.caption {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.caption h3 {
+  font-weight: 200;
+  font-size: 20px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.logo-container {
+  margin: 50px 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.logo {
+  width: 200px;
+  height: 130px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  margin: 20px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.logo:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.logo-image {
+  width: 160px;
+  height: 100px;
+}
+
+.team {
+  margin: 50px 200px;
+}
+
+.mentors-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mentors-title h2 {
+  font-size: 30px;
+  color: #781eb0;
+}
+
+.mentor {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.mentor img {
+  width: 100px;
+  height: 100px;
+  margin: auto;
+}
+
+.mentor-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.mentor-details h4 {
+  margin: 10px;
+  font-size: 20px;
+  color: #781eb0;
+}
+
+.mentor-details p {
+  margin: 5px;
+  text-align: center;
+}
+
+.team h3{
+  font-size: 30px;
+  color: #781eb0;
+}
+
+.advisor{
+  margin: 100px;
+  display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.advisor div{
+  text-align: center;
+  width: 200px;
+  height: auto;
+  margin: 50px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.advisor img {
+  width: 100px;
+  height: 100px;
+  margin: auto;
+}
+
+button {
+  background-color: #f3f7fe;
+  color: #781eb0;
+  border: none;
+  border-radius: 8px;
+  width: 150px;
+  height: 45px;
+  transition: .3s;
+}
+
+button:hover {
+  background-color: #781eb0;
+  box-shadow: 0 0 0 5px #a16bc2;
+  color: #fff;
+}
+
+
+@media only screen and (max-width: 1024px){
+  .logo-container{
+    margin: 50px 50px;
   }
-  to {
-    transform: rotate(360deg);
+  .team {
+    margin: 50px;
+  }
+  .advisor{
+    margin: 50px;
+  }
+  .advisor div{
+    margin: 20px;
   }
 }
